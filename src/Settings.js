@@ -49,7 +49,12 @@ export class Settings extends Component {
                         </Filter>
                     </div>
                 </div>
-                <div className=""></div>
+                <div className="filterList">
+                    <Filter key="Noir"     filterFunctions={{'contrast':138, 'hue':0, 'brightness':122, 'saturate':0, 'sepia':0}} onClick={} > <Image image={this.props.image} /> </Filter>
+                    <Filter key="Aged"     filterFunctions={{'contrast':, 'hue':, 'brightness':, 'saturate':, 'sepia':,}} onClick={} > <Image image={this.props.image} /> </Filter>
+                    <Filter key="Whiteout" filterFunctions={{'contrast':, 'hue':, 'brightness':, 'saturate':, 'sepia':,}} onClick={} > <Image image={this.props.image} /> </Filter>
+                    <Filter key="Vintage"  filterFunctions={{'contrast':, 'hue':, 'brightness':, 'saturate':, 'sepia':,}} onClick={} > <Image image={this.props.image} /> </Filter>
+                </div>
             </div>
         )
     }
