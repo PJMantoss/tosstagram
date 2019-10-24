@@ -1,9 +1,19 @@
 import React from 'react'
 
-export default function Image(props) {
-    return (
-        <div className="Image" style={{backgroundImage: 'url(' + props.image + ')'}}>
-            
-        </div>
-    )
+export default class Image extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            image: ''
+        }
+    }
+
+    render(){
+        return (
+            <div className="Image" style={{backgroundImage: 'url(' + this.props.image + ')'}}>
+                {this.props.image}
+            </div>
+        )
+    }
+    
 }

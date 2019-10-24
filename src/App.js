@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props){
     super(props)
     this.state = {
-      image: 'https://picsum.photos/id/0/5616/3744'
+      image: 'https://picsum.photos/1080/800'
     }
   }
 

@@ -1,8 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import Setting from './Setting';
+import Filter from './Filter';
+import Image from './Image'; 
 
 export class Settings extends Component {
-    constructor(){
-        super()
+    constructor(props){
+        super(props)
         this.state = {
              'contrast':100, 
              'hue':0, 
@@ -16,7 +19,7 @@ export class Settings extends Component {
             this.updateSettings = this.updateSettings.bind(this);
         }
 
-        handleChange(){
+        handleChange(e){
             let filter = e.target.id;
             let value = e.target.value;
             this.setState((prevState,props) => {

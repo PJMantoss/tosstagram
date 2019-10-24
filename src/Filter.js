@@ -20,7 +20,7 @@ export class Filter extends Component {
     }
 
     render() {
-        let filterString = this.getFilterCSSStyles(this.props.filterFunctions);
+        let filterstring = this.getFilterCSSStyles(this.props.filterFunctions);
         return (
             <div 
                 className="Filter" 
@@ -34,14 +34,14 @@ export class Filter extends Component {
 }
 
 Filter.propTypes = {
-    filterFunctions: React.PropTypes.shape({
-        hue: React.PropTypes.number,
-        contrast: React.PropTypes.number,
-        brightness: React.PropTypes.number,
-        saturate: React.PropTypes.number,
-        sepia: React.PropTypes.number
+    filterFunctions: PropTypes.shape({
+        hue: PropTypes.number,
+        contrast: PropTypes.number,
+        brightness: PropTypes.number,
+        saturate: PropTypes.number,
+        sepia: PropTypes.number
     }),
-    onClick: React.PropTypes.func
+    onClick: PropTypes.func
 };
 
 export default Filter

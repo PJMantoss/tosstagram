@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Setting(props) {
     return (
@@ -21,9 +22,9 @@ export default function Setting(props) {
 }
 
 Setting.propTypes = {
-    name: React.PropTypes.string,
-    value: React.PropTypes.number,
-    min: React.PropTypes.number,
-    max: React.PropTypes.number,
-    onChange: React.PropTypes.func
+    name: PropTypes.string,
+    value: PropTypes.number,
+    min: PropTypes.number,
+    max: PropTypes.number,
+    onChange: PropTypes.func
 };
