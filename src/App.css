@@ -132,3 +132,45 @@
   z-index: 3;
   content: '';
 }
+
+.filterList {
+  width: 100%;
+  height: calc(15% - 10px);
+  background: rgba(46, 56, 79, 0.45);
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.filterList .Filter {
+  width: 25%;
+  height: 100%;
+  position: relative;
+  flex: 1 0 1;
+  margin-right: 20px;
+  background: #212839;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.25);
+  transition: box-shadow .25s ease, transform .25s ease;
+}
+
+.filterList .Filter:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px -10px black;
+  transform: scale(1.1);
+}
+
+.filterList .Filter:last-child {
+  margin-right: 0px;
+}
+
+.filterList .Filter .Image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: filter .25s ease .25s;
+}
