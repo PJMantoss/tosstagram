@@ -1,30 +1,72 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+
+let value = '';
 
 export default function Setting(props) {
-    return (
-        <div className="Setting">
-            <label>
-                <div>{props.name}</div>
-                <div>{props.value}</div>
-                <input 
-                    id={props.name} 
-                    min={props.min} 
-                    max={props.max} 
-                    step="1" 
-                    onChange={props.onChange} 
-                    type="range" 
-                    value={props.value}
-                />
-            </label>
-        </div>
-    )
-}
+    
+        if (props.name === 'hue'){
+             value.replace('deg','');
 
-Setting.propTypes = {
-    name: PropTypes.string,
-    value: PropTypes.number,
-    min: PropTypes.number,
-    max: PropTypes.number,
-    onChange: PropTypes.func
-};
+            return (
+                <div className="Setting">
+                    <label>
+                        <div>{props.name}</div>
+                        <div>{value}</div>
+                        <input 
+                            refs={props.name}
+                            id={props.name} 
+                            min="-360" 
+                            max="360" 
+                            step="1" 
+                            onChange={props.onChange} 
+                            type="range" 
+                            defaultValue={props.value}
+                        />
+                    </label>
+                </div>
+            )
+        } else if(props.name === 'contrast' || props.name === 'brightness') {
+
+                   value.replace('%','');
+
+            return (
+                <div className="Setting">
+                    <label>
+                        <div>{props.name}</div>
+                        <div>{value}</div>
+                        <input 
+                            refs={props.name}
+                            id={props.name} 
+                            min="0" 
+                            max="200" 
+                            step="1" 
+                            onChange={props.onChange} 
+                            type="range" 
+                            defaultValue={props.value}
+                        />
+                    </label>
+                </div>
+            )
+        } else{
+            value.replace('%','');
+
+            return (
+                <div className="Setting">
+                    <label>
+                        <div>{props.name}</div>
+                        <div>{value}</div>
+                        <input 
+                            refs={props.name}
+                            id={props.name} 
+                            min="0" 
+                            max="100" 
+                            step="1" 
+                            onChange={props.onChange} 
+                            type="range" 
+                            defaultValue={props.value}
+                        />
+                    </label>
+                </div>
+            )
+        }
+}
