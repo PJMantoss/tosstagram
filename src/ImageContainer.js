@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Image from './Image';
 
 export class ImageContainer extends Component {
     constructor(props){

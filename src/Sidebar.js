@@ -11,9 +11,9 @@ export default function Sidebar(props) {
                    value={setting.value} 
                 />
     })
-    
+
     return (
-        <div>
+        <div className="sidebar">
             <div className="title">Tosstagram v1.0</div>
             {settings}
         </div>
