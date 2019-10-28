@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Sidebar from './Sidebar';
-import ImageContainer from './ImageContainer';
+import ImageContainer from './image/ImageContainer';
 import FilterList from './FilterList';
 
 export class Settings extends Component {

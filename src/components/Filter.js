@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from './Image';
+import Image from './image/Image'
 
 export default function Filter(props) {
     return (

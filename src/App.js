@@ -1,6 +1,6 @@
 import React from 'react';
-import Settings from './Settings'
-import ImageBG from './ImageBG'
+import Settings from './components/Settings';
+import ImageBG from './components/image/ImageBG';
 import './App.css';
 
 data = {
