@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Sidebar from './Sidebar';
+import Imagecontainer from './ImageContainer';
 import Setting from './Setting';
 import Filter from './Filter';
 import Image from './Image'; 
@@ -7,16 +9,11 @@ export class Settings extends Component {
     constructor(props){
         super(props)
         this.state = {
-             'contrast':100, 
-             'hue':0, 
-             'brightness':100, 
-             'saturate':100, 
-             'sepia':0
+             settings: '', 
+             image: '', 
+             filters: ''
             };
             this.props = props
-
-            this.handleChange = this.handleChange.bind(this);
-            this.updateSettings = this.updateSettings.bind(this);
         }
 
         handleChange(e){
