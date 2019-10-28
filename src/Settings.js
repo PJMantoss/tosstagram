@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Sidebar from './Sidebar';
 import Imagecontainer from './ImageContainer';
-import Setting from './Setting';
 import Filter from './Filter';
 import Image from './Image'; 
 
@@ -16,18 +15,6 @@ export class Settings extends Component {
             this.props = props
         }
 
-        handleChange(e){
-            let filter = e.target.id;
-            let value = e.target.value;
-            this.setState((prevState,props) => {
-                prevState[filter] = value;
-                return prevState;
-            });
-        }
-
-        updateSettings(nextFilterState){
-            this.setState(nextFilterState);
-        }
 
     render() {
         return (
