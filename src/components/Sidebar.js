@@ -4,7 +4,7 @@ import Setting from './Setting';
 export default function Sidebar(props) {
 
     let onChange = props.onChange;
-    let settings = props.settings.map((setting, i) => {
+    let settings = settings.map((setting, i) => {
         return <Setting 
                    onChange={onChange} 
                    name={setting.name} 

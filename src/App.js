@@ -3,7 +3,7 @@ import Settings from './components/Settings';
 import ImageBG from './components/image/ImageBG';
 import './App.css';
 
-data = {
+let data = {
 	image: 'https://picsum.photos/1080/800',
 	settings: [
 		{
