@@ -1,6 +1,7 @@
 import React from 'react';
 import Setting from './Setting';
 
+
 export default function Sidebar(props) {
 
     let onChange = props.onChange;

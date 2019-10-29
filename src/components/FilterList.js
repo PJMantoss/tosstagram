@@ -5,7 +5,8 @@ export default function FilterList(props) {
 
     let image = props.image;
     let onClick = props.onClick;
-    let filters = props.filters.map((filter, i) => {
+    let filters;
+    filters.map((filter, i) => {
         return <Filter 
                    onClick={onClick} 
                    id={filter.id} 
