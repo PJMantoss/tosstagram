@@ -40,7 +40,7 @@
   height: 85%;
 }
 
-.sidebar {
+.mainWrapper .sidebar {
   width: 30%;
   max-width: 350px;
   height: 100%;
@@ -53,7 +53,7 @@
   }
 }
 
-.title {
+.mainWrapper .sidebar .title {
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -65,13 +65,13 @@
   font-size: 12px;
 }
 
-.Setting {
+.mainWrapper .sidebar .Setting {
   padding: 0 20px;
   margin-top: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.Setting label {
+.mainWrapper .sidebar .Setting label {
   font-weight: 400;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -83,26 +83,26 @@
   opacity: .5;
 }
 
-.Setting input {
+.mainWrapper .sidebar .Setting input {
   width: 100px;
   margin-bottom: 20px;
 }
 
-.imageContainer {
+.mainWrapper .imageContainer {
   width: 50%;
   background: rgba(28, 34, 47, 0.5);
   display: flex;
   flex: 1 0 auto;
 }
 
-.Filter {
+.mainWrapper .imageContainer .Filter {
   display: flex;
   flex: 1 0 auto;
   justify-content: center;
   align-items: center;
 }
 
-.imageBG {
+.mainWrapper .imageContainer .Image {
   height: 90%;
   width: 90%;
   background-size: cover;
@@ -112,7 +112,7 @@
   transition: filter .125s ease;
 }
 
-.Image::before {
+.mainWrapper .imageContainer .Image::before {
   content: '';
   width: 100%;
   height: 100%;
@@ -122,7 +122,7 @@
   opacity: .3;
 }
 
-.Image::after {
+.mainWrapper .imageContainer .Image::after {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -164,7 +164,7 @@
   margin-right: 0px;
 }
 
-.Image {
+.filterList .Filter .Image {
   position: absolute;
   top: 0;
   left: 0;
