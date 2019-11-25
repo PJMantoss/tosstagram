@@ -19,10 +19,10 @@ export class Settings extends Component {
             this.handleChange = this.handleChange.bind(this);
             this.updateSettings = this.updateSettings.bind(this);
         }
-        handleChange(e){
+        handleChange = e => {
             let filter = e.target.id;
             let value = e.target.value;
-            this.setState((prevState,props) => {
+            this.setState((prevState, props) => {
                 prevState[filter] = value;
                 return prevState;
             });
