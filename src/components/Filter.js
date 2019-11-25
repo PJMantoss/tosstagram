@@ -6,16 +6,17 @@ export class Filter extends Component {
     // property initializer syntax
     getFilterCSSStyles = functions => {
         const filterString = [];
-         for (let filter in functions) {
-             if (functions.hasOwnProperty(filter)) {
-                 switch(filter) {
-                     case 'hue': filterString += 'hue-rotate(' + functions[filter] + ' deg)'; 
-                     break;
-                     default: filterString += filter + ' (' + functions[filter] + ' %) '
-                 }
-             }
-         }
-         return filterString;
+         
+        Object.keys(functions).forEach(filter => {
+            if (filter === 'hue'){
+                filterString.push(`hue-rotate(${functions[filter]}deg)`)
+            } else {
+                filterString.push(`${filter}(${functions[filter]}%)`)
+            }
+        });
+
+        console.log(filterString.join(' '))
+         return filterString.join(' ');
     }
 
     render(){
