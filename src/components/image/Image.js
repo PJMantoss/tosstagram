@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-let filterString = "";
-
 export default class Image extends React.Component {
     constructor(props){
         super(props)

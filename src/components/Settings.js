@@ -27,7 +27,7 @@ export class Settings extends Component {
                 return prevState;
             });
         }
-        updateSettings(nextFilterState){
+        updateSettings = nextFilterState => {
             this.setState({
                 nextFilterState
             });
