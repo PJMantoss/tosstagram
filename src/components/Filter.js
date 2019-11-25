@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 export class Filter extends Component {
     // property initializer syntax
-    getFilterCSSStyles = (functions) => {
-        let filterString = "";
+    getFilterCSSStyles = functions => {
+        const filterString = [];
          for (let filter in functions) {
              if (functions.hasOwnProperty(filter)) {
                  switch(filter) {
