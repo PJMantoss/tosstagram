@@ -3,6 +3,13 @@ import PropTypes from 'prop-types';
 
 
 export class Filter extends Component {
+
+    constructor(props){
+        super(props);
+        
+        this.props = props;
+        this.getFilterCSSStyles = this.getFilterCSSStyles.bind(this); 
+    }
     // property initializer syntax
     getFilterCSSStyles = functions => {
         const filterString = [];
