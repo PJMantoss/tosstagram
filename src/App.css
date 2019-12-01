@@ -28,6 +28,8 @@
 }
 
 .Settings {
+  display: inline-flex;
+  flex-wrap: wrap;
   width: 90vw;
   height: 90vh;
   position: relative;
@@ -36,20 +38,29 @@
 
 .mainWrapper {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   height: 85%;
+  padding-bottom: 20px;
+  margin: 5px;
+  justify-content: space-evenly;
 }
 
 .mainWrapper .sidebar {
+  display: flex;
+  flex-wrap: wrap;
   width: 30%;
   max-width: 350px;
   height: 100%;
   background: rgba(46, 56, 79, 0.85);
+  padding: 5px;
+  overflow-x: auto;
 }
 
 @media screen and (max-width: 880px) {
   .mainWrapper .sidebar {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -69,6 +80,7 @@
   padding: 0 20px;
   margin-top: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: inline-flex;
 }
 
 .mainWrapper .sidebar .Setting label {
@@ -76,6 +88,7 @@
   text-transform: uppercase;
   color: #FFFFFF;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 5px;
   font-size: 12px;
@@ -138,9 +151,10 @@
   height: calc(15% - 10px);
   background: rgba(46, 56, 79, 0.45);
   box-sizing: border-box;
-  padding: 20px;
+  padding: 10px;
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
+  margin-top: 5px;
 }
 
 .filterList .Filter {
