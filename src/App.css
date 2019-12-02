@@ -80,6 +80,7 @@
   margin-top: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   display: inline-flex;
+  align-items: center;
 }
 
 .mainWrapper .sidebar .Setting label {
